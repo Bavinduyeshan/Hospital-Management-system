@@ -49,6 +49,7 @@ namespace HMS
             Doctor doctor = new Doctor(doctor_id, fname, lname, nic, date, gender, address, specialization, email, phone_number);
             doctor.Delete(conn, doctor_id);
             Populate();
+            FillDoctorid();
         }
 
         string date, specialization;
@@ -212,6 +213,9 @@ namespace HMS
 
                 Doctor doctor = new Doctor(doctor_id, fname, lname, nic, date, gender, address, specialization, email, phone_number);
                 doctor.Add(conn);
+
+                Populate();
+                FillDoctorid();
             }
             catch (Exception ex)
             {

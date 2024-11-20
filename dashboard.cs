@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,9 @@ namespace HMS
         {
             InitializeComponent();
         }
-
+        SqlConnection conn;
+        SqlCommand cmd;
+        SqlDataAdapter da;
         private void btnPatient_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -79,6 +82,89 @@ namespace HMS
             this.Hide();
             AppoinmnetForm f7= new AppoinmnetForm();
             f7.Show();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
+            try
+            {
+                string connectionstring = "Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
+                conn = new SqlConnection(connectionstring);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            GetPatientCount();
+            GetDoctorcount();
+            GetStaffcount();
+        }
+        public void GetPatientCount()
+        {
+            try
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Patient"; // Replace `Patient` with your actual table name
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                int count = (int)cmd.ExecuteScalar(); // ExecuteScalar returns the first column of the first row
+                lblpatientcount.Text = ("Total patients:" + count.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error fetching patient count: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+               
+            }
+            finally
+            {
+                conn.Close(); 
+            }
+        }
+
+        public void GetDoctorcount()
+        {
+            try
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Doctor"; // Replace `Patient` with your actual table name
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                int count = (int)cmd.ExecuteScalar(); // ExecuteScalar returns the first column of the first row
+                lbldoccount.Text = ("Total Doctors:" + count.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error fetching patient count: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+
+        public void GetStaffcount()
+        {
+            try
+            {
+                conn.Open();
+                string query = "SELECT COUNT(*) FROM Staff"; // Replace `Patient` with your actual table name
+                SqlCommand cmd = new SqlCommand(query, conn);
+
+                int count = (int)cmd.ExecuteScalar(); // ExecuteScalar returns the first column of the first row
+                lblstaffcount.Text = ("Total Staff Members:" + count.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error fetching patient count: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

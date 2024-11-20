@@ -115,6 +115,8 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillGuardianid();
+
         }
 
         //update button click
@@ -143,6 +145,7 @@ namespace HMS
                 guardian.Update(conn);
 
                 Populate();
+                FillGuardianid();
             }
             catch(Exception ex)
             {
@@ -246,6 +249,7 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillGuardianid();
         }
     }
 

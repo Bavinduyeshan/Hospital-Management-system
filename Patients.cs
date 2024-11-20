@@ -21,10 +21,12 @@ namespace HMS
     {
 
         
-        SqlConnection conn = new SqlConnection(@"Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
+        //SqlConnection conn = new SqlConnection(@"Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
         public Patients()
         {
             InitializeComponent();
+           
+
             ToolTip toolTip1 = new ToolTip();
 
             // Set a custom delay time if needed (optional)
@@ -39,6 +41,7 @@ namespace HMS
             };
 
         }
+        SqlConnection conn;
         string fname, lname, nic, gender, address, email, civilstatus, occupation, contactno;
         string date,doc_id, room_id;
         int patientid;
@@ -126,6 +129,8 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }*/
             Populate();
+            FillRoomid();
+            FillDoctorid();
         }
 
         private Guna.UI2.WinForms.Guna2ComboBox GetCmbpatientid()
@@ -143,7 +148,7 @@ namespace HMS
                 Patient patient = new Patient(patientid, fname, lname, nic, date, gender, address, email, occupation, civilstatus, contactno, doc_id, room_id);
                 patient.Delete(conn, patientid);
                 Populate();
-            FillRoomid();
+                FillRoomid();
 
 
 
@@ -223,17 +228,22 @@ namespace HMS
 
         private void Patients_Load(object sender, EventArgs e)
         {
-            /*
+            
             try
             {
                 string connectionstring = "Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
                 conn = new SqlConnection(connectionstring);
             }
+            catch (SqlException)
+            {
+                MessageBox.Show("Database error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }*/
-          
+            }
+
+
             FillDoctorid();
             FillRoomid();
             FillPatientid();
@@ -271,17 +281,30 @@ namespace HMS
         //fill room id code
         public void FillRoomid()
         {
+            try
+            {
+                conn.Open();
+                SqlCommand cmd = new SqlCommand("SELECT room_id FROM Rooms WHERE availability = 1", conn);
+                SqlDataReader rdr;
+                rdr = cmd.ExecuteReader();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("room_id", typeof(string));
+                dt.Load(rdr);
 
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("SELECT room_id FROM Rooms WHERE availability = 1", conn);
-            SqlDataReader rdr;
-            rdr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("room_id", typeof(string));
-            dt.Load(rdr);
-            cmbroom_id.ValueMember = "room_id";
-            cmbroom_id.DataSource = dt;
-            conn.Close();
+                cmbroom_id.ValueMember = "room_id";
+                cmbroom_id.DataSource = dt;
+                rdr.Close();
+            }
+            catch (Exception ex) { 
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            
+           
+
         }
 
 
@@ -376,6 +399,7 @@ namespace HMS
             }
             Populate();
             FillPatientid();
+            FillRoomid();
         }
     }
 
@@ -478,13 +502,27 @@ namespace HMS
                 {
                     conn.Open();
 
+                    
                     SqlCommand getRoomCmd = new SqlCommand("SELECT room_id FROM Patient WHERE patientid = @patientid", conn);
                     getRoomCmd.Parameters.AddWithValue("@patientid", patientid);
                     int room_id = (int)getRoomCmd.ExecuteScalar();
+                   
+                        SqlCommand checkBillCmd = new SqlCommand("SELECT * FROM Bill WHERE patient_id = @patient_id AND status = 'pending'", conn);
+                        checkBillCmd.Parameters.AddWithValue("@patient_id", patientid);
+                    SqlDataReader reader = checkBillCmd.ExecuteReader();
 
+                    // If there are any unpaid bills, display an error message and exit
+                    if (reader.HasRows)
+                    {
+                        MessageBox.Show("Cannot delete patient. Bill is not paid yet.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        reader.Close(); // Close the reader
+                        conn.Close();
+                        return;  // Exit the method if there are unpaid bills
+                    }
 
+                    reader.Close();
 
-
+                    
                     SqlCommand cmd = new SqlCommand("DELETE FROM Patient WHERE patientid = @patientid", conn);
                     cmd.Parameters.AddWithValue("@patientid", patientid);
 
