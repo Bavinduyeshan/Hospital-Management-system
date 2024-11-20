@@ -25,10 +25,10 @@ namespace HMS
             toolTip1.ReshowDelay = 500; // Time between showing same tooltip
 
             // Set the ComboBox MouseHover event
-            cmbroomid.MouseHover += (sender, e) =>
-            {
+            //cmbromid.MouseHover += (sender, e) =>
+            
                 toolTip1.SetToolTip(cmbroomid, "Please Do not select in insert option,slect this only in update and delete");
-            };
+            
         }
         SqlConnection conn;
         SqlDataAdapter da;

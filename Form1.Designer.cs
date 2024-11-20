@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.cmbrole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblrole = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnregister = new Guna.UI2.WinForms.Guna2Button();
             this.btnExit = new Guna.UI2.WinForms.Guna2Button();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
@@ -43,16 +45,20 @@
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuGradientPanel1
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.cmbrole);
+            this.bunifuGradientPanel1.Controls.Add(this.lblrole);
             this.bunifuGradientPanel1.Controls.Add(this.btnregister);
             this.bunifuGradientPanel1.Controls.Add(this.btnExit);
             this.bunifuGradientPanel1.Controls.Add(this.btnLogin);
@@ -75,6 +81,37 @@
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(616, 816);
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
+            // 
+            // cmbrole
+            // 
+            this.cmbrole.BackColor = System.Drawing.Color.Transparent;
+            this.cmbrole.BorderColor = System.Drawing.Color.DarkGreen;
+            this.cmbrole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbrole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbrole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbrole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbrole.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbrole.ItemHeight = 30;
+            this.cmbrole.Items.AddRange(new object[] {
+            "Manager",
+            "Reciptionist"});
+            this.cmbrole.Location = new System.Drawing.Point(303, 291);
+            this.cmbrole.Name = "cmbrole";
+            this.cmbrole.Size = new System.Drawing.Size(258, 36);
+            this.cmbrole.TabIndex = 14;
+            // 
+            // lblrole
+            // 
+            this.lblrole.AutoSize = true;
+            this.lblrole.BackColor = System.Drawing.Color.Transparent;
+            this.lblrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrole.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblrole.Location = new System.Drawing.Point(117, 291);
+            this.lblrole.Name = "lblrole";
+            this.lblrole.Size = new System.Drawing.Size(77, 32);
+            this.lblrole.TabIndex = 13;
+            this.lblrole.Text = "Role";
             // 
             // btnregister
             // 
@@ -242,6 +279,10 @@
             this.bunifuElipse1.ElipseRadius = 16;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -257,6 +298,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -276,6 +318,9 @@
         private Guna.UI2.WinForms.Guna2Button btnLogin;
         private Guna.UI2.WinForms.Guna2Button btnExit;
         private Guna.UI2.WinForms.Guna2Button btnregister;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbrole;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblrole;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

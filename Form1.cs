@@ -51,17 +51,33 @@ namespace HMS
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            string username, password;
+            string username, password,role;
 
             username = txtUsername.Text;
             password=txtpassword.Text;
            
+            if (cmbrole.SelectedIndex == -1) // No role selected
+            {
+                errorProvider1.SetError(cmbrole, "Please select a role.");
+                return; // Stop further execution
+            }
+            else
+            {
+                errorProvider1.SetError(cmbrole, ""); // Clear error if role is selected
+            }
 
-            Login login=new Login(username, password);
-            login.Checklogin(conn);
-            this.Hide();
-            dashboard f2 = new dashboard();
-            f2.Show();
+            role = cmbrole.SelectedItem.ToString();
+            Login login = new Login(username, password, role);
+            if (login.Checklogin(conn))
+            {
+                this.Hide();
+                dashboard f2 = new dashboard();
+                f2.Show();
+            }
+            else
+            {
+                MessageBox.Show("Invalid credentials. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnClear_Click(object sender, EventArgs e)
@@ -108,25 +124,28 @@ namespace HMS
     {
         public string username;
         public string password;
+        public string role;
 
 
 
-        public Login(string username, string password)
+        public Login(string username, string password, string role)
         {
             this.username = username;
             this.password = password;
+            this.role = role;   
         }
 
-        public void Checklogin(SqlConnection conn)
+        public bool Checklogin(SqlConnection conn)
         {
 
             try
             {
                 conn.Open();
-                string query = "select * from Login where Username=@UserName and Password=@Password";
+                string query = "select * from Login where Role=@Role AND Username=@UserName AND Password=@Password";
                 SqlCommand cmd = new SqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@UserName", username);
-                cmd.Parameters.AddWithValue("@Password", password);
+                cmd.Parameters.AddWithValue("Role",role);
+                cmd.Parameters.AddWithValue("UserName", username);
+                cmd.Parameters.AddWithValue("Password", password);
 
                 SqlDataReader reader = cmd.ExecuteReader();
 
@@ -134,20 +153,26 @@ namespace HMS
                 if (reader.HasRows)
                 {
                     MessageBox.Show("Login successful", "Railway login system", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    
+                    return true;
                 }
                 else
                 {
                     MessageBox.Show("Invalid username or password", "Railway login system", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return false;
                 }
+                
             }
             catch
             {
 
                 MessageBox.Show("Error while searching", "Railway login system", MessageBoxButtons.OK, MessageBoxIcon.Information);
-               
+               return false;
             }
-            conn.Close();
+            finally
+            {
+                conn.Close();
+            }
+           
         }
     }
 

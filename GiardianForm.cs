@@ -231,6 +231,7 @@ namespace HMS
         {
             try
             {
+                
                 patientid = Convert.ToInt32(cmbpatientid.SelectedValue);
                 nic=txtNIC.Text;
                 name=txtname    .Text;

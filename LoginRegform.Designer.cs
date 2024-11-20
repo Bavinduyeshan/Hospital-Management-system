@@ -39,7 +39,11 @@
             this.txtpassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnaddsuer = new Guna.UI2.WinForms.Guna2Button();
             this.btnback = new Guna.UI2.WinForms.Guna2Button();
+            this.cmbrole = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.lblrole = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -168,12 +172,49 @@
             this.btnback.Text = "Back";
             this.btnback.Click += new System.EventHandler(this.btnback_Click);
             // 
+            // cmbrole
+            // 
+            this.cmbrole.BackColor = System.Drawing.Color.Transparent;
+            this.cmbrole.BorderColor = System.Drawing.Color.DarkGreen;
+            this.cmbrole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbrole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbrole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbrole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.cmbrole.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cmbrole.ItemHeight = 30;
+            this.cmbrole.Items.AddRange(new object[] {
+            "Manager",
+            "Reciptionist"});
+            this.cmbrole.Location = new System.Drawing.Point(353, 372);
+            this.cmbrole.Name = "cmbrole";
+            this.cmbrole.Size = new System.Drawing.Size(258, 36);
+            this.cmbrole.TabIndex = 17;
+            // 
+            // lblrole
+            // 
+            this.lblrole.AutoSize = true;
+            this.lblrole.BackColor = System.Drawing.Color.Transparent;
+            this.lblrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblrole.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblrole.Location = new System.Drawing.Point(92, 372);
+            this.lblrole.Name = "lblrole";
+            this.lblrole.Size = new System.Drawing.Size(77, 32);
+            this.lblrole.TabIndex = 16;
+            this.lblrole.Text = "Role";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // LoginRegform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(673, 769);
+            this.Controls.Add(this.cmbrole);
+            this.Controls.Add(this.lblrole);
             this.Controls.Add(this.btnback);
             this.Controls.Add(this.btnaddsuer);
             this.Controls.Add(this.txtpassword);
@@ -187,6 +228,7 @@
             this.Text = "LoginRegform";
             this.Load += new System.EventHandler(this.LoginRegform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -203,5 +245,8 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtpassword;
         private Guna.UI2.WinForms.Guna2Button btnaddsuer;
         private Guna.UI2.WinForms.Guna2Button btnback;
+        private Guna.UI2.WinForms.Guna2ComboBox cmbrole;
+        private Bunifu.Framework.UI.BunifuCustomLabel lblrole;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

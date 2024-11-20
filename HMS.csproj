@@ -213,6 +213,24 @@
     <Compile Include="Roomform.Designer.cs">
       <DependentUpon>Roomform.cs</DependentUpon>
     </Compile>
+    <Compile Include="Searchformappoinment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Searchformappoinment.Designer.cs">
+      <DependentUpon>Searchformappoinment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchformDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchformDoctor.Designer.cs">
+      <DependentUpon>SearchformDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchFormpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchFormpatient.Designer.cs">
+      <DependentUpon>SearchFormpatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="StaffForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -278,6 +296,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Roomform.resx">
       <DependentUpon>Roomform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Searchformappoinment.resx">
+      <DependentUpon>Searchformappoinment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchformDoctor.resx">
+      <DependentUpon>SearchformDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchFormpatient.resx">
+      <DependentUpon>SearchFormpatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="StaffForm.resx">
       <DependentUpon>StaffForm.cs</DependentUpon>

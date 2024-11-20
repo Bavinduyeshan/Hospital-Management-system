@@ -18,7 +18,7 @@ namespace HMS
             InitializeComponent();
         }
         SqlConnection conn;
-        string username,Password;
+        string username,Password,role;
 
         private void LoginRegform_Load(object sender, EventArgs e)
         {
@@ -49,8 +49,9 @@ namespace HMS
             {
                 username=txtUsername.Text;
                 Password=txtpassword.Text;
+                role=cmbrole.SelectedItem.ToString();
 
-                LoginReg loginReg = new LoginReg(username, Password);
+                LoginReg loginReg = new LoginReg(username, Password,role);
                 loginReg.Loginreg(conn);
 
             }
@@ -66,11 +67,13 @@ namespace HMS
     {
         private string username;
         private string password;
+        private string role;
 
 
-        public LoginReg(string username, string password) { 
+        public LoginReg(string username, string password,string role) { 
             this.username = username;
             this.password = password;
+            this.role = role;
         }
 
         public void Loginreg(SqlConnection conn)
@@ -78,8 +81,8 @@ namespace HMS
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Login (UserName,Password) VALUES (@UserName,@Password)", conn);
-
+                SqlCommand cmd = new SqlCommand("INSERT INTO Login (Role,UserName,Password) VALUES (,@Role,@UserName,@Password)", conn);
+                cmd.Parameters.AddWithValue("Role",role);
                 cmd.Parameters.AddWithValue("UserName", username);
                 cmd.Parameters.AddWithValue("Password", password);
 
