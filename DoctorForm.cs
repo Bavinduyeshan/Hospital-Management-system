@@ -89,6 +89,11 @@ namespace HMS
             }
         }
 
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //home button code
         private void btnHome_Click(object sender, EventArgs e)
         {

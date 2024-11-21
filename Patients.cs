@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Web.Security;
 using System.Windows.Forms;
 using ComponentFactory.Krypton.Toolkit;
+using Guna.UI2.WinForms;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
@@ -248,6 +249,9 @@ namespace HMS
             FillRoomid();
             FillPatientid();
             Populate();
+
+
+           
 
         }
 

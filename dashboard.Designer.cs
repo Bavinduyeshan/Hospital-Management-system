@@ -35,6 +35,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnmedhistory = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnStaff = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -44,7 +45,6 @@
             this.btnAppoinment = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDoctor = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnPatient = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
@@ -117,6 +117,41 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(232, 621);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
+            this.btnDashboard.BackColor = System.Drawing.Color.White;
+            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnDashboard.BorderRadius = 0;
+            this.btnDashboard.ButtonText = "Dashboard";
+            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
+            this.btnDashboard.Iconimage_right = null;
+            this.btnDashboard.Iconimage_right_Selected = null;
+            this.btnDashboard.Iconimage_Selected = null;
+            this.btnDashboard.IconMarginLeft = 0;
+            this.btnDashboard.IconMarginRight = 0;
+            this.btnDashboard.IconRightVisible = true;
+            this.btnDashboard.IconRightZoom = 0D;
+            this.btnDashboard.IconVisible = true;
+            this.btnDashboard.IconZoom = 90D;
+            this.btnDashboard.IsTab = false;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Normalcolor = System.Drawing.Color.White;
+            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnDashboard.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnDashboard.selected = false;
+            this.btnDashboard.Size = new System.Drawing.Size(232, 59);
+            this.btnDashboard.TabIndex = 0;
+            this.btnDashboard.Text = "Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDashboard.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnExit
             // 
@@ -441,41 +476,6 @@
             this.btnPatient.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnPatient.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatient.Click += new System.EventHandler(this.btnPatient_Click);
-            // 
-            // btnDashboard
-            // 
-            this.btnDashboard.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(53)))), ((int)(((byte)(65)))));
-            this.btnDashboard.BackColor = System.Drawing.Color.White;
-            this.btnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnDashboard.BorderRadius = 0;
-            this.btnDashboard.ButtonText = "Dashboard";
-            this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
-            this.btnDashboard.Iconimage_right = null;
-            this.btnDashboard.Iconimage_right_Selected = null;
-            this.btnDashboard.Iconimage_Selected = null;
-            this.btnDashboard.IconMarginLeft = 0;
-            this.btnDashboard.IconMarginRight = 0;
-            this.btnDashboard.IconRightVisible = true;
-            this.btnDashboard.IconRightZoom = 0D;
-            this.btnDashboard.IconVisible = true;
-            this.btnDashboard.IconZoom = 90D;
-            this.btnDashboard.IsTab = false;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
-            this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.btnDashboard.Name = "btnDashboard";
-            this.btnDashboard.Normalcolor = System.Drawing.Color.White;
-            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
-            this.btnDashboard.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            this.btnDashboard.selected = false;
-            this.btnDashboard.Size = new System.Drawing.Size(232, 59);
-            this.btnDashboard.TabIndex = 0;
-            this.btnDashboard.Text = "Dashboard";
-            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDashboard.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // bunifuElipse1
             // 
