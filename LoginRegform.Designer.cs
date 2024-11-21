@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginRegform));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.txtUsername = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -42,8 +40,10 @@
             this.cmbrole = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblrole = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -51,35 +51,12 @@
             this.bunifuElipse1.ElipseRadius = 16;
             this.bunifuElipse1.TargetControl = this;
             // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.BackColor = System.Drawing.Color.White;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.DarkGreen;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(190, 272);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(254, 32);
-            this.bunifuCustomLabel3.TabIndex = 9;
-            this.bunifuCustomLabel3.Text = "Unity Health Care";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(196, 47);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(280, 199);
-            this.guna2PictureBox1.TabIndex = 8;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.ForestGreen;
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(92, 431);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(152, 32);
@@ -91,7 +68,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.ForestGreen;
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(92, 531);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(146, 32);
@@ -141,13 +118,15 @@
             // btnaddsuer
             // 
             this.btnaddsuer.BorderRadius = 20;
+            this.btnaddsuer.BorderThickness = 1;
             this.btnaddsuer.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnaddsuer.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnaddsuer.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnaddsuer.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnaddsuer.FillColor = System.Drawing.Color.ForestGreen;
+            this.btnaddsuer.FillColor = System.Drawing.Color.White;
             this.btnaddsuer.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnaddsuer.ForeColor = System.Drawing.Color.White;
+            this.btnaddsuer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.btnaddsuer.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnaddsuer.Location = new System.Drawing.Point(490, 631);
             this.btnaddsuer.Name = "btnaddsuer";
             this.btnaddsuer.Size = new System.Drawing.Size(132, 45);
@@ -158,13 +137,15 @@
             // btnback
             // 
             this.btnback.BorderRadius = 20;
+            this.btnback.BorderThickness = 1;
             this.btnback.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.btnback.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btnback.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnback.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnback.FillColor = System.Drawing.Color.ForestGreen;
+            this.btnback.FillColor = System.Drawing.Color.White;
             this.btnback.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnback.ForeColor = System.Drawing.Color.White;
+            this.btnback.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.btnback.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnback.Location = new System.Drawing.Point(312, 631);
             this.btnback.Name = "btnback";
             this.btnback.Size = new System.Drawing.Size(132, 45);
@@ -196,7 +177,7 @@
             this.lblrole.AutoSize = true;
             this.lblrole.BackColor = System.Drawing.Color.Transparent;
             this.lblrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrole.ForeColor = System.Drawing.Color.ForestGreen;
+            this.lblrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.lblrole.Location = new System.Drawing.Point(92, 372);
             this.lblrole.Name = "lblrole";
             this.lblrole.Size = new System.Drawing.Size(77, 32);
@@ -207,12 +188,37 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.BackColor = System.Drawing.Color.White;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(204, 242);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(254, 32);
+            this.bunifuCustomLabel3.TabIndex = 19;
+            this.bunifuCustomLabel3.Text = "Unity Health Care";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(196, 40);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(280, 199);
+            this.guna2PictureBox1.TabIndex = 18;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // LoginRegform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(673, 769);
+            this.Controls.Add(this.bunifuCustomLabel3);
+            this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.cmbrole);
             this.Controls.Add(this.lblrole);
             this.Controls.Add(this.btnback);
@@ -221,14 +227,12 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.bunifuCustomLabel2);
             this.Controls.Add(this.bunifuCustomLabel1);
-            this.Controls.Add(this.bunifuCustomLabel3);
-            this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginRegform";
             this.Text = "LoginRegform";
             this.Load += new System.EventHandler(this.LoginRegform_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -237,8 +241,6 @@
         #endregion
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
-        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel2;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtUsername;
@@ -248,5 +250,7 @@
         private Guna.UI2.WinForms.Guna2ComboBox cmbrole;
         private Bunifu.Framework.UI.BunifuCustomLabel lblrole;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

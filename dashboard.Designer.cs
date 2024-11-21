@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dashboard));
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnDashboard = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnExit = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnmedhistory = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -52,71 +47,19 @@
             this.lblpatientcount = new System.Windows.Forms.Label();
             this.lbldoccount = new System.Windows.Forms.Label();
             this.lblstaffcount = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.guna2Panel1.SuspendLayout();
+            this.guna2Panel6.SuspendLayout();
+            this.guna2Panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1942, 61);
-            this.guna2Panel2.TabIndex = 1;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(95)))), ((int)(((byte)(21)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(88, 12);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(206, 31);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.Text = "Unity Health Care";
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(82, 61);
-            this.guna2PictureBox1.TabIndex = 3;
-            this.guna2PictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(455, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(162, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Dashboard";
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(239)))), ((int)(((byte)(248)))));
-            this.guna2Panel1.Controls.Add(this.btnDashboard);
-            this.guna2Panel1.Controls.Add(this.btnExit);
-            this.guna2Panel1.Controls.Add(this.btnmedhistory);
-            this.guna2Panel1.Controls.Add(this.btnStaff);
-            this.guna2Panel1.Controls.Add(this.btnguardian);
-            this.guna2Panel1.Controls.Add(this.btnBill);
-            this.guna2Panel1.Controls.Add(this.btnRooms);
-            this.guna2Panel1.Controls.Add(this.btnAppoinment);
-            this.guna2Panel1.Controls.Add(this.btnDoctor);
-            this.guna2Panel1.Controls.Add(this.btnPatient);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 61);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(232, 621);
-            this.guna2Panel1.TabIndex = 2;
             // 
             // btnDashboard
             // 
@@ -127,6 +70,7 @@
             this.btnDashboard.ButtonText = "Dashboard";
             this.btnDashboard.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDashboard.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDashboard.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnDashboard.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDashboard.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDashboard.Iconimage")));
             this.btnDashboard.Iconimage_right = null;
@@ -139,18 +83,18 @@
             this.btnDashboard.IconVisible = true;
             this.btnDashboard.IconZoom = 90D;
             this.btnDashboard.IsTab = false;
-            this.btnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.btnDashboard.Location = new System.Drawing.Point(15, 34);
             this.btnDashboard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Normalcolor = System.Drawing.Color.White;
-            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnDashboard.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnDashboard.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnDashboard.selected = false;
             this.btnDashboard.Size = new System.Drawing.Size(232, 59);
             this.btnDashboard.TabIndex = 0;
             this.btnDashboard.Text = "Dashboard";
             this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDashboard.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnDashboard.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnDashboard.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // btnExit
@@ -174,18 +118,18 @@
             this.btnExit.IconVisible = true;
             this.btnExit.IconZoom = 90D;
             this.btnExit.IsTab = false;
-            this.btnExit.Location = new System.Drawing.Point(4, 509);
+            this.btnExit.Location = new System.Drawing.Point(34, 21);
             this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnExit.Name = "btnExit";
             this.btnExit.Normalcolor = System.Drawing.Color.White;
-            this.btnExit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnExit.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnExit.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnExit.selected = false;
             this.btnExit.Size = new System.Drawing.Size(228, 59);
             this.btnExit.TabIndex = 10;
             this.btnExit.Text = "Exit";
             this.btnExit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnExit.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnExit.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnExit.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -210,18 +154,18 @@
             this.btnmedhistory.IconVisible = true;
             this.btnmedhistory.IconZoom = 90D;
             this.btnmedhistory.IsTab = false;
-            this.btnmedhistory.Location = new System.Drawing.Point(-38, 451);
+            this.btnmedhistory.Location = new System.Drawing.Point(0, 334);
             this.btnmedhistory.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmedhistory.Name = "btnmedhistory";
             this.btnmedhistory.Normalcolor = System.Drawing.Color.White;
-            this.btnmedhistory.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnmedhistory.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnmedhistory.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnmedhistory.selected = false;
-            this.btnmedhistory.Size = new System.Drawing.Size(337, 59);
+            this.btnmedhistory.Size = new System.Drawing.Size(253, 59);
             this.btnmedhistory.TabIndex = 9;
             this.btnmedhistory.Text = "Medical History";
             this.btnmedhistory.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnmedhistory.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnmedhistory.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnmedhistory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmedhistory.Click += new System.EventHandler(this.btnmedhistory_Click);
             // 
@@ -246,18 +190,18 @@
             this.btnStaff.IconVisible = true;
             this.btnStaff.IconZoom = 90D;
             this.btnStaff.IsTab = false;
-            this.btnStaff.Location = new System.Drawing.Point(4, 393);
+            this.btnStaff.Location = new System.Drawing.Point(21, 419);
             this.btnStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Normalcolor = System.Drawing.Color.White;
-            this.btnStaff.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnStaff.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnStaff.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnStaff.selected = false;
             this.btnStaff.Size = new System.Drawing.Size(228, 59);
             this.btnStaff.TabIndex = 8;
             this.btnStaff.Text = "Staff";
             this.btnStaff.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnStaff.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnStaff.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnStaff.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
@@ -282,18 +226,18 @@
             this.btnguardian.IconVisible = true;
             this.btnguardian.IconZoom = 90D;
             this.btnguardian.IsTab = false;
-            this.btnguardian.Location = new System.Drawing.Point(4, 337);
+            this.btnguardian.Location = new System.Drawing.Point(17, 267);
             this.btnguardian.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnguardian.Name = "btnguardian";
             this.btnguardian.Normalcolor = System.Drawing.Color.White;
-            this.btnguardian.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnguardian.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnguardian.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnguardian.selected = false;
             this.btnguardian.Size = new System.Drawing.Size(228, 59);
             this.btnguardian.TabIndex = 7;
             this.btnguardian.Text = "Guardian";
             this.btnguardian.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnguardian.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnguardian.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnguardian.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnguardian.Click += new System.EventHandler(this.btnguardian_Click);
             // 
@@ -318,18 +262,18 @@
             this.btnBill.IconVisible = true;
             this.btnBill.IconZoom = 90D;
             this.btnBill.IsTab = false;
-            this.btnBill.Location = new System.Drawing.Point(0, 282);
+            this.btnBill.Location = new System.Drawing.Point(17, 683);
             this.btnBill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBill.Name = "btnBill";
             this.btnBill.Normalcolor = System.Drawing.Color.White;
-            this.btnBill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnBill.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnBill.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnBill.selected = false;
             this.btnBill.Size = new System.Drawing.Size(232, 59);
             this.btnBill.TabIndex = 6;
             this.btnBill.Text = "Bill";
             this.btnBill.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnBill.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnBill.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnBill.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBill.Click += new System.EventHandler(this.btnBill_Click);
             // 
@@ -354,18 +298,18 @@
             this.btnRooms.IconVisible = true;
             this.btnRooms.IconZoom = 90D;
             this.btnRooms.IsTab = false;
-            this.btnRooms.Location = new System.Drawing.Point(0, 228);
+            this.btnRooms.Location = new System.Drawing.Point(17, 507);
             this.btnRooms.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnRooms.Name = "btnRooms";
             this.btnRooms.Normalcolor = System.Drawing.Color.White;
-            this.btnRooms.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnRooms.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnRooms.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnRooms.selected = false;
             this.btnRooms.Size = new System.Drawing.Size(232, 59);
             this.btnRooms.TabIndex = 4;
             this.btnRooms.Text = "Rooms";
             this.btnRooms.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnRooms.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnRooms.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnRooms.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRooms.Click += new System.EventHandler(this.btnRooms_Click);
             // 
@@ -390,18 +334,18 @@
             this.btnAppoinment.IconVisible = true;
             this.btnAppoinment.IconZoom = 90D;
             this.btnAppoinment.IsTab = false;
-            this.btnAppoinment.Location = new System.Drawing.Point(-10, 170);
+            this.btnAppoinment.Location = new System.Drawing.Point(11, 594);
             this.btnAppoinment.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAppoinment.Name = "btnAppoinment";
             this.btnAppoinment.Normalcolor = System.Drawing.Color.White;
-            this.btnAppoinment.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnAppoinment.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnAppoinment.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnAppoinment.selected = false;
             this.btnAppoinment.Size = new System.Drawing.Size(242, 59);
             this.btnAppoinment.TabIndex = 3;
             this.btnAppoinment.Text = "Appoinment";
             this.btnAppoinment.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnAppoinment.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnAppoinment.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnAppoinment.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAppoinment.Click += new System.EventHandler(this.btnAppoinment_Click);
             // 
@@ -426,18 +370,18 @@
             this.btnDoctor.IconVisible = true;
             this.btnDoctor.IconZoom = 90D;
             this.btnDoctor.IsTab = false;
-            this.btnDoctor.Location = new System.Drawing.Point(0, 112);
+            this.btnDoctor.Location = new System.Drawing.Point(17, 190);
             this.btnDoctor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnDoctor.Name = "btnDoctor";
             this.btnDoctor.Normalcolor = System.Drawing.Color.White;
-            this.btnDoctor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnDoctor.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnDoctor.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnDoctor.selected = false;
             this.btnDoctor.Size = new System.Drawing.Size(232, 59);
             this.btnDoctor.TabIndex = 2;
             this.btnDoctor.Text = "Doctor";
             this.btnDoctor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDoctor.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnDoctor.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnDoctor.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDoctor.Click += new System.EventHandler(this.btnDoctor_Click);
             // 
@@ -462,18 +406,18 @@
             this.btnPatient.IconVisible = true;
             this.btnPatient.IconZoom = 90D;
             this.btnPatient.IsTab = false;
-            this.btnPatient.Location = new System.Drawing.Point(0, 54);
+            this.btnPatient.Location = new System.Drawing.Point(17, 119);
             this.btnPatient.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnPatient.Name = "btnPatient";
             this.btnPatient.Normalcolor = System.Drawing.Color.White;
-            this.btnPatient.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
+            this.btnPatient.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(164)))), ((int)(((byte)(178)))), ((int)(((byte)(253)))));
             this.btnPatient.OnHoverTextColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
             this.btnPatient.selected = false;
             this.btnPatient.Size = new System.Drawing.Size(232, 59);
             this.btnPatient.TabIndex = 1;
             this.btnPatient.Text = "Patient";
             this.btnPatient.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnPatient.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            this.btnPatient.Textcolor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
             this.btnPatient.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPatient.Click += new System.EventHandler(this.btnPatient_Click);
             // 
@@ -486,7 +430,7 @@
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(254)))), ((int)(((byte)(218)))));
             this.guna2Panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel3.BackgroundImage")));
-            this.guna2Panel3.Location = new System.Drawing.Point(309, 81);
+            this.guna2Panel3.Location = new System.Drawing.Point(365, 198);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.Size = new System.Drawing.Size(356, 233);
             this.guna2Panel3.TabIndex = 3;
@@ -495,7 +439,7 @@
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(254)))), ((int)(((byte)(218)))));
             this.guna2Panel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel4.BackgroundImage")));
-            this.guna2Panel4.Location = new System.Drawing.Point(923, 90);
+            this.guna2Panel4.Location = new System.Drawing.Point(922, 198);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(320, 227);
             this.guna2Panel4.TabIndex = 4;
@@ -504,7 +448,7 @@
             // 
             this.guna2Panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(254)))), ((int)(((byte)(218)))));
             this.guna2Panel5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel5.BackgroundImage")));
-            this.guna2Panel5.Location = new System.Drawing.Point(1490, 90);
+            this.guna2Panel5.Location = new System.Drawing.Point(1516, 198);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.Size = new System.Drawing.Size(381, 224);
             this.guna2Panel5.TabIndex = 5;
@@ -513,7 +457,7 @@
             // 
             this.lblpatientcount.AutoSize = true;
             this.lblpatientcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpatientcount.Location = new System.Drawing.Point(407, 334);
+            this.lblpatientcount.Location = new System.Drawing.Point(463, 451);
             this.lblpatientcount.Name = "lblpatientcount";
             this.lblpatientcount.Size = new System.Drawing.Size(85, 29);
             this.lblpatientcount.TabIndex = 6;
@@ -523,7 +467,7 @@
             // 
             this.lbldoccount.AutoSize = true;
             this.lbldoccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldoccount.Location = new System.Drawing.Point(1013, 334);
+            this.lbldoccount.Location = new System.Drawing.Point(1012, 442);
             this.lbldoccount.Name = "lbldoccount";
             this.lbldoccount.Size = new System.Drawing.Size(85, 29);
             this.lbldoccount.TabIndex = 7;
@@ -533,44 +477,150 @@
             // 
             this.lblstaffcount.AutoSize = true;
             this.lblstaffcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstaffcount.Location = new System.Drawing.Point(1608, 334);
+            this.lblstaffcount.Location = new System.Drawing.Point(1634, 442);
             this.lblstaffcount.Name = "lblstaffcount";
             this.lblstaffcount.Size = new System.Drawing.Size(85, 29);
             this.lblstaffcount.TabIndex = 8;
             this.lblstaffcount.Text = "label2";
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel1.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel1.BorderRadius = 25;
+            this.guna2Panel1.BorderThickness = 1;
+            this.guna2Panel1.Controls.Add(this.btnAppoinment);
+            this.guna2Panel1.Controls.Add(this.btnRooms);
+            this.guna2Panel1.Controls.Add(this.btnBill);
+            this.guna2Panel1.Controls.Add(this.btnDashboard);
+            this.guna2Panel1.Controls.Add(this.btnDoctor);
+            this.guna2Panel1.Controls.Add(this.btnPatient);
+            this.guna2Panel1.Controls.Add(this.btnStaff);
+            this.guna2Panel1.Controls.Add(this.btnguardian);
+            this.guna2Panel1.Controls.Add(this.btnmedhistory);
+            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel1.FillColor = System.Drawing.Color.White;
+            this.guna2Panel1.Location = new System.Drawing.Point(-2, 198);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel1.Size = new System.Drawing.Size(253, 773);
+            this.guna2Panel1.TabIndex = 27;
+            // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel2.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel2.BorderRadius = 25;
+            this.guna2Panel2.BorderThickness = 1;
+            this.guna2Panel2.Controls.Add(this.label2);
+            this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
+            this.guna2Panel2.FillColor = System.Drawing.Color.White;
+            this.guna2Panel2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2Panel2.Location = new System.Drawing.Point(-9, -10);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel2.Size = new System.Drawing.Size(256, 158);
+            this.guna2Panel2.TabIndex = 28;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(32, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 25);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Unity Health Care";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(70, 18);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(94, 79);
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // guna2Panel6
+            // 
+            this.guna2Panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel6.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel6.BorderRadius = 25;
+            this.guna2Panel6.BorderThickness = 1;
+            this.guna2Panel6.Controls.Add(this.label1);
+            this.guna2Panel6.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel6.FillColor = System.Drawing.Color.White;
+            this.guna2Panel6.Location = new System.Drawing.Point(412, 11);
+            this.guna2Panel6.Name = "guna2Panel6";
+            this.guna2Panel6.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel6.Size = new System.Drawing.Size(1118, 76);
+            this.guna2Panel6.TabIndex = 29;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(492, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(140, 29);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Dashboard";
+            // 
+            // guna2Panel7
+            // 
+            this.guna2Panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel7.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel7.BorderRadius = 25;
+            this.guna2Panel7.BorderThickness = 1;
+            this.guna2Panel7.Controls.Add(this.btnExit);
+            this.guna2Panel7.FillColor = System.Drawing.Color.White;
+            this.guna2Panel7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2Panel7.Location = new System.Drawing.Point(-15, 999);
+            this.guna2Panel7.Name = "guna2Panel7";
+            this.guna2Panel7.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel7.Size = new System.Drawing.Size(269, 112);
+            this.guna2Panel7.TabIndex = 30;
+            // 
             // dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1942, 682);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.ClientSize = new System.Drawing.Size(1942, 1102);
+            this.Controls.Add(this.guna2Panel7);
+            this.Controls.Add(this.guna2Panel6);
+            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.lblstaffcount);
             this.Controls.Add(this.lbldoccount);
             this.Controls.Add(this.lblpatientcount);
             this.Controls.Add(this.guna2Panel5);
             this.Controls.Add(this.guna2Panel4);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2Panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "dashboard";
             this.Text = "dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.dashboard_Load);
+            this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel6.ResumeLayout(false);
+            this.guna2Panel6.PerformLayout();
+            this.guna2Panel7.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Bunifu.Framework.UI.BunifuFlatButton btnBill;
         private Bunifu.Framework.UI.BunifuFlatButton btnRooms;
         private Bunifu.Framework.UI.BunifuFlatButton btnAppoinment;
@@ -579,8 +629,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnDashboard;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Bunifu.Framework.UI.BunifuFlatButton btnguardian;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Bunifu.Framework.UI.BunifuFlatButton btnStaff;
         private Bunifu.Framework.UI.BunifuFlatButton btnmedhistory;
         private Bunifu.Framework.UI.BunifuFlatButton btnExit;
@@ -590,5 +638,12 @@
         private System.Windows.Forms.Label lblpatientcount;
         private System.Windows.Forms.Label lblstaffcount;
         private System.Windows.Forms.Label lbldoccount;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel7;
     }
 }

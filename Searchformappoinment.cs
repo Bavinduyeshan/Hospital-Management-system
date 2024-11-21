@@ -73,5 +73,20 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AppoinmnetForm appoinmnetForm = new AppoinmnetForm();
+            appoinmnetForm.Show();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure ! you want to exit from the system", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
     }
 }

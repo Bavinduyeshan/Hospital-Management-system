@@ -223,6 +223,13 @@ namespace HMS
             }
         }
 
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchFormpatient searchFormpatient = new SearchFormpatient();
+            searchFormpatient.Show();
+        }
+
         //SqlConnection conn;
         SqlCommand cmd;
         SqlDataAdapter da;

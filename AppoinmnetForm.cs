@@ -239,6 +239,13 @@ namespace HMS
             appoinmentreportform appoinmentreportform = new appoinmentreportform();
             appoinmentreportform.Show();
         }
+
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Searchformappoinment searchformappoinment = new Searchformappoinment();
+            searchformappoinment.Show();
+        }
     }
 
 

@@ -94,6 +94,13 @@ namespace HMS
 
         }
 
+        private void btnsearch_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SearchformDoctor searchformDoctor = new SearchformDoctor();
+            searchformDoctor.Show();
+        }
+
         //home button code
         private void btnHome_Click(object sender, EventArgs e)
         {

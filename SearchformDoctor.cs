@@ -75,5 +75,20 @@ namespace HMS
             conn.Close();
             
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure ! you want to exit from the system", "Exit", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            DoctorForm doctorForm = new DoctorForm();
+            doctorForm.Show();
+        }
     }
 }
