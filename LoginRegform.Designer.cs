@@ -56,7 +56,7 @@
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(92, 431);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(152, 32);
@@ -68,7 +68,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.BackColor = System.Drawing.Color.Transparent;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(92, 531);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(146, 32);
@@ -85,7 +85,7 @@
             this.txtUsername.HintText = "";
             this.txtUsername.isPassword = false;
             this.txtUsername.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtUsername.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txtUsername.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.txtUsername.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtUsername.LineThickness = 3;
             this.txtUsername.Location = new System.Drawing.Point(353, 425);
@@ -105,7 +105,7 @@
             this.txtpassword.HintText = "";
             this.txtpassword.isPassword = true;
             this.txtpassword.LineFocusedColor = System.Drawing.Color.Blue;
-            this.txtpassword.LineIdleColor = System.Drawing.Color.ForestGreen;
+            this.txtpassword.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.txtpassword.LineMouseHoverColor = System.Drawing.Color.Blue;
             this.txtpassword.LineThickness = 3;
             this.txtpassword.Location = new System.Drawing.Point(353, 525);
@@ -156,7 +156,7 @@
             // cmbrole
             // 
             this.cmbrole.BackColor = System.Drawing.Color.Transparent;
-            this.cmbrole.BorderColor = System.Drawing.Color.DarkGreen;
+            this.cmbrole.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.cmbrole.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbrole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbrole.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
@@ -177,7 +177,7 @@
             this.lblrole.AutoSize = true;
             this.lblrole.BackColor = System.Drawing.Color.Transparent;
             this.lblrole.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.lblrole.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(47)))), ((int)(((byte)(110)))), ((int)(((byte)(255)))));
             this.lblrole.Location = new System.Drawing.Point(92, 372);
             this.lblrole.Name = "lblrole";
             this.lblrole.Size = new System.Drawing.Size(77, 32);

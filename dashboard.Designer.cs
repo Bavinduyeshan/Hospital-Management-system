@@ -503,7 +503,7 @@
             this.guna2Panel1.Location = new System.Drawing.Point(-2, 198);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.BorderRadius = 20;
-            this.guna2Panel1.Size = new System.Drawing.Size(253, 773);
+            this.guna2Panel1.Size = new System.Drawing.Size(253, 760);
             this.guna2Panel1.TabIndex = 27;
             // 
             // guna2Panel2
@@ -581,10 +581,10 @@
             this.guna2Panel7.Controls.Add(this.btnExit);
             this.guna2Panel7.FillColor = System.Drawing.Color.White;
             this.guna2Panel7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel7.Location = new System.Drawing.Point(-15, 999);
+            this.guna2Panel7.Location = new System.Drawing.Point(-15, 988);
             this.guna2Panel7.Name = "guna2Panel7";
             this.guna2Panel7.ShadowDecoration.BorderRadius = 20;
-            this.guna2Panel7.Size = new System.Drawing.Size(269, 112);
+            this.guna2Panel7.Size = new System.Drawing.Size(269, 123);
             this.guna2Panel7.TabIndex = 30;
             // 
             // dashboard

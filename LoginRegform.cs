@@ -81,7 +81,7 @@ namespace HMS
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("INSERT INTO Login (Role,UserName,Password) VALUES (,@Role,@UserName,@Password)", conn);
+                SqlCommand cmd = new SqlCommand("INSERT INTO Login (Role,UserName,Password) VALUES (@Role,@UserName,@Password)", conn);
                 cmd.Parameters.AddWithValue("Role",role);
                 cmd.Parameters.AddWithValue("UserName", username);
                 cmd.Parameters.AddWithValue("Password", password);
