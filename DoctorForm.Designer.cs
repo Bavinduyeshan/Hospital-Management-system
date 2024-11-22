@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DoctorForm));
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgtDoctorlist = new Guna.UI2.WinForms.Guna2DataGridView();
             this.cmbgender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.cmbdoc_id = new Guna.UI2.WinForms.Guna2ComboBox();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.txtcontNo = new System.Windows.Forms.MaskedTextBox();
             this.lblDocid = new System.Windows.Forms.Label();
             this.lblcontno = new System.Windows.Forms.Label();
             this.lblemail = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.lblNic = new System.Windows.Forms.Label();
             this.lblLname = new System.Windows.Forms.Label();
             this.lblFname = new System.Windows.Forms.Label();
-            this.txtcontNo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtspecialization = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtAddress = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -66,19 +66,19 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnsearch = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgtDoctorlist)).BeginInit();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2GroupBox2
@@ -98,27 +98,27 @@
             // 
             // dgtDoctorlist
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgtDoctorlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgtDoctorlist.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgtDoctorlist.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(240)))), ((int)(((byte)(246)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgtDoctorlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgtDoctorlist.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgtDoctorlist.ColumnHeadersHeight = 4;
             this.dgtDoctorlist.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgtDoctorlist.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgtDoctorlist.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgtDoctorlist.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgtDoctorlist.Location = new System.Drawing.Point(18, 46);
             this.dgtDoctorlist.Name = "dgtDoctorlist";
@@ -187,6 +187,7 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
             this.guna2GroupBox1.BorderRadius = 20;
+            this.guna2GroupBox1.Controls.Add(this.txtcontNo);
             this.guna2GroupBox1.Controls.Add(this.lblDocid);
             this.guna2GroupBox1.Controls.Add(this.cmbgender);
             this.guna2GroupBox1.Controls.Add(this.cmbdoc_id);
@@ -200,7 +201,6 @@
             this.guna2GroupBox1.Controls.Add(this.lblNic);
             this.guna2GroupBox1.Controls.Add(this.lblLname);
             this.guna2GroupBox1.Controls.Add(this.lblFname);
-            this.guna2GroupBox1.Controls.Add(this.txtcontNo);
             this.guna2GroupBox1.Controls.Add(this.txtEmail);
             this.guna2GroupBox1.Controls.Add(this.txtspecialization);
             this.guna2GroupBox1.Controls.Add(this.txtAddress);
@@ -216,6 +216,14 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(640, 895);
             this.guna2GroupBox1.TabIndex = 23;
             this.guna2GroupBox1.Text = "Doctor Data";
+            // 
+            // txtcontNo
+            // 
+            this.txtcontNo.Location = new System.Drawing.Point(284, 664);
+            this.txtcontNo.Mask = "(999) 000-0000";
+            this.txtcontNo.Name = "txtcontNo";
+            this.txtcontNo.Size = new System.Drawing.Size(283, 27);
+            this.txtcontNo.TabIndex = 37;
             // 
             // lblDocid
             // 
@@ -350,23 +358,6 @@
             this.lblFname.Size = new System.Drawing.Size(115, 28);
             this.lblFname.TabIndex = 18;
             this.lblFname.Text = "First Name";
-            // 
-            // txtcontNo
-            // 
-            this.txtcontNo.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtcontNo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtcontNo.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtcontNo.BorderThickness = 3;
-            this.txtcontNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcontNo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtcontNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtcontNo.isPassword = false;
-            this.txtcontNo.Location = new System.Drawing.Point(284, 645);
-            this.txtcontNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcontNo.Name = "txtcontNo";
-            this.txtcontNo.Size = new System.Drawing.Size(283, 44);
-            this.txtcontNo.TabIndex = 17;
-            this.txtcontNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtEmail
             // 
@@ -533,6 +524,7 @@
             this.btnclear.Size = new System.Drawing.Size(169, 45);
             this.btnclear.TabIndex = 4;
             this.btnclear.Text = "clear";
+            this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // btnDel
             // 
@@ -637,6 +629,30 @@
             this.guna2Panel3.Size = new System.Drawing.Size(244, 123);
             this.guna2Panel3.TabIndex = 27;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.White;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.label2.Location = new System.Drawing.Point(32, 85);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(182, 25);
+            this.label2.TabIndex = 30;
+            this.label2.Text = "Unity Health Care";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(68, 3);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(94, 79);
+            this.guna2PictureBox1.TabIndex = 29;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
@@ -655,46 +671,6 @@
             this.guna2Panel2.ShadowDecoration.BorderRadius = 20;
             this.guna2Panel2.Size = new System.Drawing.Size(244, 588);
             this.guna2Panel2.TabIndex = 28;
-            // 
-            // guna2Panel4
-            // 
-            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
-            this.guna2Panel4.BorderColor = System.Drawing.Color.Black;
-            this.guna2Panel4.BorderRadius = 25;
-            this.guna2Panel4.BorderThickness = 1;
-            this.guna2Panel4.Controls.Add(this.btnExit);
-            this.guna2Panel4.Controls.Add(this.btnHome);
-            this.guna2Panel4.FillColor = System.Drawing.Color.White;
-            this.guna2Panel4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.guna2Panel4.Location = new System.Drawing.Point(-18, 897);
-            this.guna2Panel4.Name = "guna2Panel4";
-            this.guna2Panel4.ShadowDecoration.BorderRadius = 20;
-            this.guna2Panel4.Size = new System.Drawing.Size(250, 208);
-            this.guna2Panel4.TabIndex = 28;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.White;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(68, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(94, 79);
-            this.guna2PictureBox1.TabIndex = 29;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(32, 85);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(182, 25);
-            this.label2.TabIndex = 30;
-            this.label2.Text = "Unity Health Care";
             // 
             // btnsearch
             // 
@@ -715,6 +691,22 @@
             this.btnsearch.TabIndex = 5;
             this.btnsearch.Text = "Search";
             this.btnsearch.Click += new System.EventHandler(this.btnsearch_Click);
+            // 
+            // guna2Panel4
+            // 
+            this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(247)))), ((int)(((byte)(252)))));
+            this.guna2Panel4.BorderColor = System.Drawing.Color.Black;
+            this.guna2Panel4.BorderRadius = 25;
+            this.guna2Panel4.BorderThickness = 1;
+            this.guna2Panel4.Controls.Add(this.btnExit);
+            this.guna2Panel4.Controls.Add(this.btnHome);
+            this.guna2Panel4.FillColor = System.Drawing.Color.White;
+            this.guna2Panel4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.guna2Panel4.Location = new System.Drawing.Point(-18, 897);
+            this.guna2Panel4.Name = "guna2Panel4";
+            this.guna2Panel4.ShadowDecoration.BorderRadius = 20;
+            this.guna2Panel4.Size = new System.Drawing.Size(250, 208);
+            this.guna2Panel4.TabIndex = 28;
             // 
             // DoctorForm
             // 
@@ -741,9 +733,9 @@
             this.guna2Panel1.PerformLayout();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -762,7 +754,6 @@
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblLname;
         private System.Windows.Forms.Label lblFname;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtcontNo;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtEmail;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtspecialization;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtAddress;
@@ -788,5 +779,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnsearch;
+        private System.Windows.Forms.MaskedTextBox txtcontNo;
     }
 }

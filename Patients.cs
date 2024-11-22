@@ -369,6 +369,12 @@ namespace HMS
                     return;
                 }
 
+                if(txtcontNo.Text.Length != 10)
+                {
+                    MessageBox.Show("Contact number must be exactly 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return ;
+                }
+
                 // Check if room is available
                 conn.Open();
                 SqlCommand checkRoomCmd = new SqlCommand("SELECT availability FROM Rooms WHERE room_id = @room_id", conn);

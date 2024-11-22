@@ -137,6 +137,7 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillAppoinmentid();
 
         }
 
@@ -245,6 +246,11 @@ namespace HMS
             this.Hide();
             Searchformappoinment searchformappoinment = new Searchformappoinment();
             searchformappoinment.Show();
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

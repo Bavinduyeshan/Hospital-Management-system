@@ -457,7 +457,8 @@
             // 
             this.lblpatientcount.AutoSize = true;
             this.lblpatientcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblpatientcount.Location = new System.Drawing.Point(463, 451);
+            this.lblpatientcount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.lblpatientcount.Location = new System.Drawing.Point(428, 452);
             this.lblpatientcount.Name = "lblpatientcount";
             this.lblpatientcount.Size = new System.Drawing.Size(85, 29);
             this.lblpatientcount.TabIndex = 6;
@@ -467,7 +468,8 @@
             // 
             this.lbldoccount.AutoSize = true;
             this.lbldoccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbldoccount.Location = new System.Drawing.Point(1012, 442);
+            this.lbldoccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.lbldoccount.Location = new System.Drawing.Point(974, 452);
             this.lbldoccount.Name = "lbldoccount";
             this.lbldoccount.Size = new System.Drawing.Size(85, 29);
             this.lbldoccount.TabIndex = 7;
@@ -477,7 +479,8 @@
             // 
             this.lblstaffcount.AutoSize = true;
             this.lblstaffcount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblstaffcount.Location = new System.Drawing.Point(1634, 442);
+            this.lblstaffcount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(63)))), ((int)(((byte)(255)))));
+            this.lblstaffcount.Location = new System.Drawing.Point(1595, 452);
             this.lblstaffcount.Name = "lblstaffcount";
             this.lblstaffcount.Size = new System.Drawing.Size(85, 29);
             this.lblstaffcount.TabIndex = 8;

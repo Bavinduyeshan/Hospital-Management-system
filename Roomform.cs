@@ -89,6 +89,7 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillRoomid();
         }
 
         private void btnupdate_Click(object sender, EventArgs e)
@@ -140,6 +141,7 @@ namespace HMS
             }
             conn.Close();
             Populate() ;
+            FillRoomid();
         }
 
         private void cmbroomid_SelectedIndexChanged(object sender, EventArgs e)
@@ -176,7 +178,11 @@ namespace HMS
                  string connectionstring = "Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
                  conn = new SqlConnection(connectionstring);
              }
-             catch (Exception ex) {
+             catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            catch (Exception ex) {
                  MessageBox.Show(ex.Message);
              }
              //MessageBox.Show("You cannot select a room id; it's an identity field.");

@@ -50,6 +50,10 @@ namespace HMS
                     string connectionstring = "Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
                     conn = new SqlConnection(connectionstring);
                 }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);

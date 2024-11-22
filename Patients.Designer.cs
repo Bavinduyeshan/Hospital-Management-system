@@ -60,7 +60,6 @@
             this.lblNic = new System.Windows.Forms.Label();
             this.lblLname = new System.Windows.Forms.Label();
             this.lblFname = new System.Windows.Forms.Label();
-            this.txtcontNo = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtcivilstatus = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.txtOccupation = new Bunifu.Framework.UI.BunifuMetroTextbox();
@@ -78,6 +77,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnsearch = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtcontNo = new System.Windows.Forms.MaskedTextBox();
             this.guna2GroupBox1.SuspendLayout();
             this.guna2GroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgtpatientslist)).BeginInit();
@@ -238,6 +238,7 @@
             this.guna2GroupBox1.BackColor = System.Drawing.Color.White;
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
             this.guna2GroupBox1.BorderRadius = 20;
+            this.guna2GroupBox1.Controls.Add(this.txtcontNo);
             this.guna2GroupBox1.Controls.Add(this.cmbpatientid);
             this.guna2GroupBox1.Controls.Add(this.lblpatientid);
             this.guna2GroupBox1.Controls.Add(this.cmbgender);
@@ -256,7 +257,6 @@
             this.guna2GroupBox1.Controls.Add(this.lblNic);
             this.guna2GroupBox1.Controls.Add(this.lblLname);
             this.guna2GroupBox1.Controls.Add(this.lblFname);
-            this.guna2GroupBox1.Controls.Add(this.txtcontNo);
             this.guna2GroupBox1.Controls.Add(this.txtEmail);
             this.guna2GroupBox1.Controls.Add(this.txtcivilstatus);
             this.guna2GroupBox1.Controls.Add(this.txtOccupation);
@@ -506,23 +506,6 @@
             this.lblFname.Size = new System.Drawing.Size(115, 28);
             this.lblFname.TabIndex = 18;
             this.lblFname.Text = "First Name";
-            // 
-            // txtcontNo
-            // 
-            this.txtcontNo.BorderColorFocused = System.Drawing.Color.Blue;
-            this.txtcontNo.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtcontNo.BorderColorMouseHover = System.Drawing.Color.Blue;
-            this.txtcontNo.BorderThickness = 3;
-            this.txtcontNo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtcontNo.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.txtcontNo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.txtcontNo.isPassword = false;
-            this.txtcontNo.Location = new System.Drawing.Point(284, 708);
-            this.txtcontNo.Margin = new System.Windows.Forms.Padding(4);
-            this.txtcontNo.Name = "txtcontNo";
-            this.txtcontNo.Size = new System.Drawing.Size(283, 44);
-            this.txtcontNo.TabIndex = 17;
-            this.txtcontNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // txtEmail
             // 
@@ -832,6 +815,14 @@
             this.guna2Panel4.Size = new System.Drawing.Size(232, 183);
             this.guna2Panel4.TabIndex = 25;
             // 
+            // txtcontNo
+            // 
+            this.txtcontNo.Location = new System.Drawing.Point(284, 721);
+            this.txtcontNo.Mask = "(999) 000-0000";
+            this.txtcontNo.Name = "txtcontNo";
+            this.txtcontNo.Size = new System.Drawing.Size(283, 27);
+            this.txtcontNo.TabIndex = 38;
+            // 
             // Patients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -869,7 +860,6 @@
 
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Bunifu.Framework.UI.BunifuMetroTextbox txtcontNo;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtEmail;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtcivilstatus;
         private Bunifu.Framework.UI.BunifuMetroTextbox txtOccupation;
@@ -912,5 +902,6 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button btnsearch;
+        private System.Windows.Forms.MaskedTextBox txtcontNo;
     }
 }

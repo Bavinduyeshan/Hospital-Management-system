@@ -104,6 +104,10 @@ namespace HMS
                 string connectionstring = "Data Source=ASUS-EXPERTBOOK;Initial Catalog=HospitalManagementSystem2;Integrated Security=True;Encrypt=True;TrustServerCertificate=True";
                 conn = new SqlConnection(connectionstring);
             }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
             catch (Exception ex) {
                 MessageBox.Show(ex.Message);
             }
@@ -144,6 +148,16 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillHistoryid() ;
+        }
+
+        private void btnclear_Click(object sender, EventArgs e)
+        {
+            txtdiagnosis.Text = "";
+            txtnotes.Text = "";
+            txttreatment.Text = "";
+            cmbrelation.SelectedIndex = 0;
+            txtdiagnosis.Focus();
         }
 
         //fill history id
@@ -194,6 +208,7 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
             Populate();
+            FillHistoryid();
         }
     }
 
