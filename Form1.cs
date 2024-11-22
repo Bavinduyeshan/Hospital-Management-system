@@ -156,12 +156,12 @@ namespace HMS
 
                 if (reader.HasRows)
                 {
-                    MessageBox.Show("Login successful", "Railway login system", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Login successful", "Hospital Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return true;
                 }
                 else
                 {
-                    MessageBox.Show("Invalid username or password", "Railway login system", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Invalid username or password", "Hospital Management System", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return false;
                 }
                 

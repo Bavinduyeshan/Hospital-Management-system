@@ -229,6 +229,7 @@
             this.Controls.Add(this.bunifuCustomLabel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginRegform";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginRegform";
             this.Load += new System.EventHandler(this.LoginRegform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
