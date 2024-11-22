@@ -296,7 +296,7 @@ namespace HMS
             try
             {
                 conn.Open();
-                SqlCommand cmd = new SqlCommand("SELECT room_id FROM Rooms WHERE availability = 1", conn);
+                SqlCommand cmd = new SqlCommand("SELECT room_id FROM Rooms ", conn);//WHERE availability = 1
                 SqlDataReader rdr;
                 rdr = cmd.ExecuteReader();
                 DataTable dt = new DataTable();

@@ -174,6 +174,12 @@
     <Compile Include="GiardianForm.Designer.cs">
       <DependentUpon>GiardianForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoadForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoadForm.Designer.cs">
+      <DependentUpon>LoadForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginRegform.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -268,6 +274,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GiardianForm.resx">
       <DependentUpon>GiardianForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoadForm.resx">
+      <DependentUpon>LoadForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginRegform.resx">
       <DependentUpon>LoginRegform.cs</DependentUpon>
