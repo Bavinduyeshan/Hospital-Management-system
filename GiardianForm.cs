@@ -177,6 +177,14 @@ namespace HMS
             }
         }
 
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtname.Text = "";
+            txtNIC.Text = "";
+            txtcontNo.Text = "";
+            txtname.Focus();
+        }
+
         public void FillGuardianid()
         {
 

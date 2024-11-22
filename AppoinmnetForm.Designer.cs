@@ -301,10 +301,8 @@
             this.cmbstatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmbstatus.ItemHeight = 30;
             this.cmbstatus.Items.AddRange(new object[] {
-            "Father",
-            "Mom",
-            "Sister/brother",
-            "Other"});
+            "Available",
+            "Pending"});
             this.cmbstatus.Location = new System.Drawing.Point(266, 378);
             this.cmbstatus.Name = "cmbstatus";
             this.cmbstatus.Size = new System.Drawing.Size(225, 36);

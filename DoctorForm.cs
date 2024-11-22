@@ -232,14 +232,14 @@ namespace HMS
                 if (string.IsNullOrEmpty(txtFname.Text) && string.IsNullOrEmpty(txtLname.Text))
                 {
                     MessageBox.Show("Firstname and Lastname cannot be empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
+                   
                 }
-
-                if (txtcontNo.Text.Length != 10)
+                /*
+                else if (txtcontNo.Text.Length != 10)
                 {
                     MessageBox.Show("Contact number must be exactly 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
-                }
+                }*/
                 fname = txtFname.Text;
                 lname = txtLname.Text;
 

@@ -156,7 +156,7 @@ namespace HMS
             txtdiagnosis.Text = "";
             txtnotes.Text = "";
             txttreatment.Text = "";
-            cmbrelation.SelectedIndex = 0;
+            
             txtdiagnosis.Focus();
         }
 

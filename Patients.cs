@@ -251,6 +251,7 @@ namespace HMS
                 MessageBox.Show(ex.Message);
             }
 
+            txtcontNo.Mask = "0000000000"; // Allows only 10 digits
 
             FillDoctorid();
             FillRoomid();
@@ -368,12 +369,23 @@ namespace HMS
                     MessageBox.Show("Please select a room.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
-                if(txtcontNo.Text.Length != 10)
+                /*
+                if(txtcontNo.Text.Length !=10)
                 {
-                    MessageBox.Show("Contact number must be exactly 10 digits.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return ;
+                    MessageBox.Show("invalid contact no", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }*/
+                string contactNumber = txtcontNo.Text.Trim();
+
+                if (string.IsNullOrEmpty(contactNumber) || contactNumber.Length != 10 || !contactNumber.All(char.IsDigit))
+                {
+                    MessageBox.Show("Please enter a valid 10-digit contact number.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
                 }
+
+               
+
+
 
                 // Check if room is available
                 conn.Open();
@@ -416,7 +428,7 @@ namespace HMS
             }
             Populate();
             FillPatientid();
-            FillRoomid();
+            //FillRoomid();
         }
     }
 

@@ -236,7 +236,7 @@ namespace HMS
 
         private void btnreport_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            
             appoinmentreportform appoinmentreportform = new appoinmentreportform();
             appoinmentreportform.Show();
         }
@@ -250,7 +250,8 @@ namespace HMS
 
         private void btnclear_Click(object sender, EventArgs e)
         {
-
+            txtcontactno.Text = "";
+            cmbdocid.Focus();
         }
     }
 

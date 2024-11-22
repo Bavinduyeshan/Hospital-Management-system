@@ -128,6 +128,7 @@
             this.btnClear.Size = new System.Drawing.Size(169, 45);
             this.btnClear.TabIndex = 4;
             this.btnClear.Text = "Clear";
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnDel
             // 

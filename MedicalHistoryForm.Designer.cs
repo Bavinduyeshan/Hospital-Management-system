@@ -44,12 +44,10 @@
             this.txtdiagnosis = new Krypton.Toolkit.KryptonRichTextBox();
             this.cmbHistoryid = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblguardianid = new System.Windows.Forms.Label();
-            this.cmbrelation = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lblnotes = new System.Windows.Forms.Label();
             this.lblPatientID = new System.Windows.Forms.Label();
             this.cmbpatientid = new Guna.UI2.WinForms.Guna2ComboBox();
             this.lbltreatment = new System.Windows.Forms.Label();
-            this.lblrelation = new System.Windows.Forms.Label();
             this.lbldiagnosis = new System.Windows.Forms.Label();
             this.guna2GroupBox2 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.dgthistorylist = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -200,12 +198,10 @@
             this.guna2GroupBox1.Controls.Add(this.txtdiagnosis);
             this.guna2GroupBox1.Controls.Add(this.cmbHistoryid);
             this.guna2GroupBox1.Controls.Add(this.lblguardianid);
-            this.guna2GroupBox1.Controls.Add(this.cmbrelation);
             this.guna2GroupBox1.Controls.Add(this.lblnotes);
             this.guna2GroupBox1.Controls.Add(this.lblPatientID);
             this.guna2GroupBox1.Controls.Add(this.cmbpatientid);
             this.guna2GroupBox1.Controls.Add(this.lbltreatment);
-            this.guna2GroupBox1.Controls.Add(this.lblrelation);
             this.guna2GroupBox1.Controls.Add(this.lbldiagnosis);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(97)))), ((int)(((byte)(159)))), ((int)(((byte)(207)))));
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -267,26 +263,6 @@
             this.lblguardianid.TabIndex = 55;
             this.lblguardianid.Text = "History ID";
             // 
-            // cmbrelation
-            // 
-            this.cmbrelation.BackColor = System.Drawing.Color.Transparent;
-            this.cmbrelation.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbrelation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbrelation.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbrelation.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cmbrelation.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbrelation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cmbrelation.ItemHeight = 30;
-            this.cmbrelation.Items.AddRange(new object[] {
-            "Father",
-            "Mom",
-            "Sister/brother",
-            "Other"});
-            this.cmbrelation.Location = new System.Drawing.Point(269, 336);
-            this.cmbrelation.Name = "cmbrelation";
-            this.cmbrelation.Size = new System.Drawing.Size(282, 36);
-            this.cmbrelation.TabIndex = 54;
-            // 
             // lblnotes
             // 
             this.lblnotes.AutoSize = true;
@@ -337,18 +313,6 @@
             this.lbltreatment.Size = new System.Drawing.Size(109, 28);
             this.lbltreatment.TabIndex = 44;
             this.lbltreatment.Text = "Treatment";
-            // 
-            // lblrelation
-            // 
-            this.lblrelation.AutoSize = true;
-            this.lblrelation.BackColor = System.Drawing.Color.White;
-            this.lblrelation.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblrelation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(39)))), ((int)(((byte)(59)))));
-            this.lblrelation.Location = new System.Drawing.Point(38, 336);
-            this.lblrelation.Name = "lblrelation";
-            this.lblrelation.Size = new System.Drawing.Size(191, 28);
-            this.lblrelation.TabIndex = 43;
-            this.lblrelation.Text = "Relation to patient";
             // 
             // lbldiagnosis
             // 
@@ -573,12 +537,10 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2ComboBox cmbHistoryid;
         private System.Windows.Forms.Label lblguardianid;
-        private Guna.UI2.WinForms.Guna2ComboBox cmbrelation;
         private System.Windows.Forms.Label lblnotes;
         private System.Windows.Forms.Label lblPatientID;
         private Guna.UI2.WinForms.Guna2ComboBox cmbpatientid;
         private System.Windows.Forms.Label lbltreatment;
-        private System.Windows.Forms.Label lblrelation;
         private System.Windows.Forms.Label lbldiagnosis;
         private Krypton.Toolkit.KryptonRichTextBox txtdiagnosis;
         private Krypton.Toolkit.KryptonRichTextBox txttreatment;
